@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color:#fs2jvk; */
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.color {
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.color-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.color-options label {
+    /* margin-right: 10px; */
+}
+
+.color-options select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-center">
+            <h4>Color Flipper</h4>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Simple</a>
+                </li>
+                <li>
+                    <a href="Hex">Hex</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <h2>Background Color :
+                <span class="color"> #FS2JVK </span>
+            </h2>
+            <div class="color-options">
+                <label for="color-type">Color Type:</label>
+                <select id="color-type">
+                    <option value="hex">Hex</option>
+                    <option value="rgb">RGB</option>
+                </select>
+            </div>
+            <button class="btn btn-hero" id="btn"> Click me </button>
+        </div>
+    </main>
+
+    <!-- script  -->
+     <script src="./super.js"></script>
+</body>
+
+</html>
